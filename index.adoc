@@ -8,11 +8,8 @@
 
 == Heading 2
 
-<<<<<<< HEAD:index.adoc
 test 1
 =======
-test1
->>>>>>> 39770a6ec0f51b6586d1e67bd30435c19f4749c6:test.adoc
 
 Lorem ipsum dolor amet adaptogen waistcoat man braid kinfolk palo santo brunch normcore. Master cleanse fam asymmetrical williamsburg drinking vinegar, heirloom scenester brunch knausgaard enamel pin succulents distillery viral tbh 3 wolf moon. Green juice ugh shaman intelligentsia occupy fixie tofu +1 portland try-hard meditation. Neutra asymmetrical authentic, cornhole hammock pour-over helvetica YOLO +1 single-origin coffee. Raw denim meh distillery kale chips. PBR&B deep v coloring book, williamsburg quinoa intelligentsia ramps. Offal next level synth heirloom chambray slow-carb tofu mixtape fam food truck.
 
