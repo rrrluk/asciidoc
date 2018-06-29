@@ -7,14 +7,17 @@ body {
     margin-top: 30%;
 }
 
-.btn-large {
+.btn-nets {
     margin: 5px;
     width: 100%;
     background-color: #276580;
 }
 
-.btn-large:hover {
+.btn-nets:hover {
     background-color: #173c4c;
 }
 
-;
+.nets-logo {
+    padding: 24px 0 0 24px;
+    max-width: 120px;
+}
