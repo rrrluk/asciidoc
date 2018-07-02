@@ -2,7 +2,7 @@
 :doctype: book
 :toc: left
 :toc-title:
-:toclevels: 5
+:toclevels: 4
 :sectnums:
 :sectnumlevels: 4
 :encoding: utf-8
