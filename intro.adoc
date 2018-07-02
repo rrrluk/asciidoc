@@ -1,0 +1,29 @@
+=== General procedure
+
+There are two requirements needed to fulfill, before the testing and development can start:
+
+- Merchant has signed an e-commerce contract with the acquirer bank
+
+- You have received an e-mail with the test account details. Nets Estonia creates a test account after receiving information from merchants acquirer bank and sends the account details to the contact person mentioned in the contract.
+
+The iPay (Nets Estonia e-commerce solution) test environment is a copy of the live environment. Generally you need to implement a payment request with two data flows to iPay server:   
+
+Payment authorization request:
+-  Payment request to the iPay server. (Initiator your website, receiver "iPay server").  
+-  Payment verification, this is handled by your web service. (Initiator "iPay servlet", receiver your website)
+
+After the payment is implemented on the merchant side next steps are taken:
+
+Merchant/developer ensures that the required functionality is obtained and the system reacts adequately to different payment scenarios.
+
+Merchant/developer provides instructions by sending an e-mail to webpos@estcard.ee, on how can Nets Estonia AS perform test payments on the ready solution without causing negative impact to the merchant.
+
+After the tests are successful, Nets Estonia submits a Live environment access request to the bank and after confirmation, the Live account is activated and its details are sent to the contact person mentioned in the contract.
+
+=== Technical overview
+
+Nets Estonia e-commerce gateway (iPay) works with http queries. To request an authorization form, customer is redirected from merchant's e-shop to iPay with simple hidden html form. +
+iPay handles actual authorization and card data, ensuring that merchant never has to worry about securing customers card data, it is taken out of merchants domain and never revealed to merchant, making the whole process more secure. +
+After customer has completed payment, customer is redirected back to the merchants web store with information about the success of transaction. +
+For merchant iPay also provides online environment to view and search past transactions, making life simpler for merchant. +
+Regular reports over e-mails are also available. +
