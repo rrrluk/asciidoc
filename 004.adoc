@@ -198,7 +198,7 @@ N - feedback via browser
 
 ===== PHP example
 
-Please note that msgdata field might contain multibyte characters and threfore multibyte safe operations are needed. PHP's sprintf is NOT multibyte safe. Custom function mb_sprintf could be used instead
+NOTE: Please note that msgdata field might contain multibyte characters and threfore multibyte safe operations are needed. PHP's sprintf is NOT multibyte safe. Custom function mb_sprintf could be used instead
 
  #
  # Concatenate all the fields together with maximum length

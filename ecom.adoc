@@ -8,6 +8,7 @@
 :encoding: utf-8
 :lang: en
 :hardbreaks:
+:icons: font
 // :numbered:
 
 // [index]
