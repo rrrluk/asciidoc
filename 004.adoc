@@ -52,19 +52,19 @@ Posted data should be unpadded. However in MAC calculation all fields are padded
 
 ===== Example data
 
- action=gaf +
- lang=et +
- ver=004 +
- id=8AEF7DBEF3 +
- ecuno=784071201802 +
- eamount=000000001100 +
- cur=EUR +
- datetime=20180213113049 +
- charEncoding=UTF-8 +
- feedBackUrl=https://merchant.site/ecom-check.php +
- delivery=S +
- additionalinfo=100:ABC123;101:kala;001:jama; +
- (mac=9f7eab41d650.....) +
+ action=gaf
+ lang=et
+ ver=004
+ id=8AEF7DBEF3
+ ecuno=784071201802
+ eamount=000000001100
+ cur=EUR
+ datetime=20180213113049
+ charEncoding=UTF-8
+ feedBackUrl=https://merchant.site/ecom-check.php
+ delivery=S
+ additionalinfo=100:ABC123;101:kala;001:jama;
+ (mac=9f7eab41d650.....)
 
 ===== Example mac calculation
 
