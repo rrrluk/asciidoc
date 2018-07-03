@@ -22,8 +22,8 @@ After the tests are successful, Nets Estonia submits a Live environment access r
 
 === Technical overview
 
-Nets Estonia e-commerce gateway (iPay) works with http queries. To request an authorization form, customer is redirected from merchant's e-shop to iPay with simple hidden html form. +
-iPay handles actual authorization and card data, ensuring that merchant never has to worry about securing customers card data, it is taken out of merchants domain and never revealed to merchant, making the whole process more secure. +
-After customer has completed payment, customer is redirected back to the merchants web store with information about the success of transaction. +
-For merchant iPay also provides online environment to view and search past transactions, making life simpler for merchant. +
-Regular reports over e-mails are also available. +
+Nets Estonia e-commerce gateway (iPay) works with http queries. To request an authorization form, customer is redirected from merchant's e-shop to iPay with simple hidden html form. 
+iPay handles actual authorization and card data, ensuring that merchant never has to worry about securing customers card data, it is taken out of merchants domain and never revealed to merchant, making the whole process more secure. 
+After customer has completed payment, customer is redirected back to the merchants web store with information about the success of transaction. 
+For merchant iPay also provides online environment to view and search past transactions, making life simpler for merchant. 
+Regular reports over e-mails are also available. 
