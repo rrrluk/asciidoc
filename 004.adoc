@@ -97,7 +97,7 @@ Using input's from example below, MAC should be identical to the sample mac valu
  bb1635bd193d6fb04c075897af6ae72985a2f0d81c7f456167970d443d140dcadc93b3632e11475c1825532300156c6f33467459c218fa16b9f9a9d94cda1c043168f708098b2170a8fbb9fcd4b88bc579334b55554af4202e88bb6796ff5c5698182169a53d5ef60c14f8f33292d52110da317f5198e26b624d066aab15525c
 
 
-====== PHP example
+===== PHP example
 
 In PHP MAC would be calculated as follows:
  
@@ -196,7 +196,7 @@ N - feedback via browser
  auto=N
 
 
-====== PHP example
+===== PHP example
 
 Please note that msgdata field might contain multibyte characters and threfore multibyte safe operations are needed. PHP's sprintf is NOT multibyte safe. Custom function mb_sprintf could be used instead
 
@@ -236,8 +236,7 @@ Please note that msgdata field might contain multibyte characters and threfore m
  # unload key from memory
  #
  openssl_free_key($pubkeyid);
-
-
+ 
 
 
 
