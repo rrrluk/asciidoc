@@ -74,7 +74,7 @@ For mac calculation data fields will be padded to their max length and concatena
 RSA with SHA1 (SHA1withRSA) footnoteref:[sha,SHA1 will be deprecated in favour of sha256, however, currently SHA1 is used. New implementations should be capable of using sha256 if the need arises.] +
 **MAC**=RSA(prikey, SHA1(version+merchant_id+ecuno+amount+currency+datetime+feedbackurl+delivery+additional_info))
 
-Example input string for mac calculation from above example data: +
+Example input string for mac calculation from above example data: 
 
  "0048AEF7DBEF3784071201802000000001100EUR20180213113049https://merchant.site/ecom-check.php                                                                                            S100:ABC123;101:kala;001:jama;                                                                                                   "
  
@@ -152,7 +152,7 @@ All of the above put together, for requesting authorization page would look like
 Response is calculated the same way as request, only it is done by iPay and Merchant's webpage has to check validity of the answer.
 
 RSA with SHA1 (SHA1withRSA). footnoteref:[sha] +
-**MAC**=RSA(prikey, SHA1(ver+id+ecuno+receipt_no+eamount+cur+respcode+datetime+msgdata+actiontext)) +
+**MAC**=RSA(prikey, SHA1(ver+id+ecuno+receipt_no+eamount+cur+respcode+datetime+msgdata+actiontext))
 
 
 
