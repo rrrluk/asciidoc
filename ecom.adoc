@@ -4,7 +4,7 @@
 :toc-title:
 :toclevels: 5
 :sectnums:
-:sectnumlevels: 4
+:sectnumlevels: 3
 :encoding: utf-8
 :lang: en
 :hardbreaks:
