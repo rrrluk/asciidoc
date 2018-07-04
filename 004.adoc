@@ -97,33 +97,6 @@ Using input's from example below, MAC should be identical to the sample mac valu
  bb1635bd193d6fb04c075897af6ae72985a2f0d81c7f456167970d443d140dcadc93b3632e11475c1825532300156c6f33467459c218fa16b9f9a9d94cda1c043168f708098b2170a8fbb9fcd4b88bc579334b55554af4202e88bb6796ff5c5698182169a53d5ef60c14f8f33292d52110da317f5198e26b624d066aab15525c
 
 
-===== PHP example
-
-In PHP MAC would be calculated as follows:
- 
- #
- # Prepare key
- #
- $fp = fopen("$key", "r");
- $fs = filesize("$key");
- $priv_key = fread($fp, $fs);
- fclose($fp);
- $pkeyid = openssl_get_privatekey($priv_key);
- #
- # concatenate data for mac calculation
- # 
- $data = $ver . $id . $ecuno . $eamount . $cur . $datetime . $feedbackurl . $delivery . $addinfo_pad;
- #
- # calculate sha1 signature and sign it
- #
- $signature=sha1($data);
- openssl_sign($data, $signature, openssl_get_privatekey($priv_key));
- #
- # As this provides binary signature, the 
- # signature needs to be converted into hex.
- #
- $mac=bin2hex($signature);
- 
 ===== Example html form
 
 All of the above put together, for requesting authorization page would look like this:
@@ -196,7 +169,39 @@ N - feedback via browser
  auto=N
 
 
-===== PHP example
+
+==== Code examples
+
+===== PHP mac calculation example for request
+
+
+In PHP MAC would be calculated as follows:
+ 
+ #
+ # Prepare key
+ #
+ $fp = fopen("$key", "r");
+ $fs = filesize("$key");
+ $priv_key = fread($fp, $fs);
+ fclose($fp);
+ $pkeyid = openssl_get_privatekey($priv_key);
+ #
+ # concatenate data for mac calculation
+ # 
+ $data = $ver . $id . $ecuno . $eamount . $cur . $datetime . $feedbackurl . $delivery . $addinfo_pad;
+ #
+ # calculate sha1 signature and sign it
+ #
+ $signature=sha1($data);
+ openssl_sign($data, $signature, openssl_get_privatekey($priv_key));
+ #
+ # As this provides binary signature, the 
+ # signature needs to be converted into hex.
+ #
+ $mac=bin2hex($signature);
+ 
+
+===== PHP response mac calculation example
 
 NOTE: Please note that msgdata field might contain multibyte characters and threfore multibyte safe operations are needed. PHP's sprintf is NOT multibyte safe. Custom function mb_sprintf could be used instead
 
@@ -237,7 +242,6 @@ NOTE: Please note that msgdata field might contain multibyte characters and thre
  #
  openssl_free_key($pubkeyid);
  
-
 
 
 
