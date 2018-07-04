@@ -72,7 +72,7 @@ For mac calculation data fields will be padded to their max length and concatena
 
 
 RSA with SHA1 (SHA1withRSA) footnoteref:[sha,SHA1 will be deprecated in favour of sha256, however, currently SHA1 is used. New implementations should be capable of using sha256 if the need arises.] +
-**MAC**=RSA(prikey, SHA1(version+merchant_id+ecuno+amount+currency+datetime+feedbackurl+delivery+additional_info))
+**MAC**=RSA(prikey,SHA1(version+merchant_id+ecuno+amount+currency+datetime+feedbackurl+delivery+additional_info))
 
 Example input string for mac calculation from above example data: 
 
