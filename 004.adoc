@@ -174,10 +174,6 @@ N - feedback via browser
 
 ===== PHP
 
-====== PHP request
-
-
-In PHP MAC would be calculated as follows:
  
 .php example for mac calculation for request
  #
@@ -204,7 +200,6 @@ In PHP MAC would be calculated as follows:
  $mac=bin2hex($signature);
  
 
-====== PHP response
 
 NOTE: Please note that msgdata field might contain multibyte characters and threfore multibyte safe operations are needed. PHP's sprintf is NOT multibyte safe. Custom function mb_sprintf could be used instead
 
