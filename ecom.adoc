@@ -1,4 +1,4 @@
-= eManager user manual
+= Nets Estonia E-com Documentation 
 :doctype: book
 :toc: left
 :toc-title:
