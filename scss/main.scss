@@ -14,6 +14,9 @@
 @import "components/transitions";
 @import "components/cards";
 @import "components/buttons";
+
+$font-stack: "georgia";
+
 body {
     background-image: url("../img/bg.jpg");
 }

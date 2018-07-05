@@ -1,4 +1,4 @@
-= Nets Estonia E-com Documentation 
+= Nets Estonia E-Com Documentation 
 :doctype: book
 :toc: left
 :toc-title:
