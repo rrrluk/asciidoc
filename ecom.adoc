@@ -1,5 +1,5 @@
 = Nets Estonia E-Com Documentation 
-:doctype: book
+:doctype: article
 :toc: left
 :toc-title:
 :toclevels: 5
